@@ -1,0 +1,35 @@
+.menu {
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.menu-head {
+    position: relative;
+}
+
+.menu-head::after {
+    content: ' ';
+    border-top: 5px solid orange;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 5.3rem;
+    border-radius: 5px;
+}
+.card-row{
+    margin-top: 1.5rem;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.card-row::-webkit-scrollbar{
+    display: none;
+}
+
+@media (min-width:760px){
+    .card-row{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,108 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 1rem;
+    background-color: rgba(250, 235, 215, 0.224);
+    gap: 1rem;
+    margin: 0 1rem;
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 2px 4px 6px 0 lightgray;
+}
+.flex{
+display: flex;
+align-items: center;
+position: relative;
+}
+input{
+    outline: none;
+    width: 100%;
+    border: 2px solid lightgray;
+    background-color: transparent;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    padding-left: 1.7rem;
+}
+input::placeholder{
+    margin-left: 2rem;
+}
+.title{
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid lightgray;
+}
+.title:focus{
+    border: none;
+    border-bottom: 2px solid lightskyblue;
+}
+input:focus{
+border: 2px solid lightskyblue;
+}
+.icon{
+    position:absolute;
+    margin-inline: 0.2rem;
+}
+select{
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.4rem;
+}
+select:focus{
+    border: 2px solid lightskyblue;
+}
+.upload{
+    height: 7rem;
+    border-radius: 1rem;
+    display: flex;
+    position: relative;
+    border: 2px solid lightgrey;
+    justify-content: center;
+    align-items: center;
+}
+.uploadInput{
+    position:absolute;
+    inset: 0;
+    opacity: 0;
+}
+.innerGrid{
+display: grid;
+grid-template-columns: 1fr;
+gap: 1rem;
+}
+.btnSave{
+    background-color: lightgreen;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 4px 6px 0 lightgray;
+}
+@media (min-width:760px)
+{
+    .grid{
+        margin-inline: 2.5rem;
+    }
+    .btnSave{
+        width:20%
+    }
+}
+@media (min-width:1000px) {
+    .grid {
+        margin-top: 5rem;
+        margin-inline: 10rem;
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+    .btnSave {
+        width: 10%
+    }
+    .innerGrid{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,40 @@
+.fruit{
+    margin-top: 3rem;
+}
+.fruit-head{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+.fruit-head::after{
+    content: ' ';
+    border-top: 5px solid orange;
+    position: absolute;
+    bottom: -2px;
+    width: 6.5rem;
+    border-radius: 5px;
+}
+.fruit-head button{
+    padding: 0 0.7rem;
+    background-color: orange;
+    border: none;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.fruit-btn{
+    display: none;
+    gap: 0.5rem;
+}
+
+
+@media (min-width:760px){
+    .fruit-btn {
+        display: flex;
+    }
+        .fruit {
+            margin-top: 5rem;
+        }
+}

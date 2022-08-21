@@ -1,0 +1,52 @@
+.cardItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 6px 0 lightgrey;
+    height: 6rem;
+    padding: 1rem;
+}
+
+.cardImg {
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    width: max-content;
+    padding: 0.3rem 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardText {
+    color: darkgrey;
+    font-weight: normal;
+}
+
+.activeCard{
+    background-color: red;
+}
+.activeImg{
+    background-color: white;
+    color: black;
+}
+.activeText{
+    color: white;
+}
+
+.cardItem:hover{
+    background-color: red;
+}
+
+.cardItem:hover .cardImg{
+    background-color: pink;
+    color: black;
+}
+
+.cardItem:hover .cardText{
+    color: white;
+}

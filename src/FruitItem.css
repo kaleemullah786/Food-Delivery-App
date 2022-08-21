@@ -1,0 +1,50 @@
+.item-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fruit-item {
+    background-color: white;
+    min-width: 17rem;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    box-shadow: 2px 4px 6px 0 lightgray;
+}
+
+.fruit-item img {
+    background-color: rgba(0, 0, 0, 0);
+    filter: drop-shadow(2px 4px 6px gray);
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+}
+
+.item-text h5 {
+    color: gray;
+    font-weight: normal;
+}
+
+.item-text p {
+    color: red;
+}
+
+.item-text p span {
+    font-weight: bold;
+    color: initial;
+    font-size: 1rem;
+}
+
+.item-cart {
+    background-color: red;
+    padding: 0.3rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
